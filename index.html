@@ -7,84 +7,99 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/NGStudiios/WP/main/logo.png">
   <style>
-    body {
+    /* Reset básico */
+    * {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fff;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff;
       color: #333;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      min-height: 100vh;
     }
 
+    /* Header profesional */
     header {
       width: 100%;
-      background-color: #c00; /* Rojo */
-      padding: 20px 0;
+      background: #fff;
+      border-bottom: 2px solid #c00; /* línea roja fina */
       display: flex;
-      justify-content: center;
       align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
 
     header img {
       height: 60px;
-      margin-right: 15px;
+      margin-right: 20px;
     }
 
     header h1 {
-      color: #fff;
-      font-size: 2em;
-      margin: 0;
+      font-size: 1.8em;
+      color: #c00;
+      font-weight: 600;
     }
 
-    .warning-banner {
-      width: 100%;
-      background-color: #ff0000; /* Rojo brillante */
-      color: #fff;
-      font-size: 2em;
-      font-weight: bold;
-      text-align: center;
-      padding: 30px 10px;
-      margin: 30px 0;
+    /* Contenido central */
+    .content {
+      flex: 1;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-    }
-
-    .warning-banner img {
-      height: 50px;
-      margin-right: 15px;
-    }
-
-    .content {
       text-align: center;
-      max-width: 800px;
+      padding: 40px 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .content h2 {
+      font-size: 2.5em;
+      color: #c00;
+      margin-bottom: 20px;
     }
 
     .content p {
-      font-size: 1.5em;
-      color: #c00;
+      font-size: 1.2em;
+      color: #555;
+      max-width: 600px;
+    }
+
+    /* Animación fade-in */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Footer discreto */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <!-- Encabezado con logo y nombre -->
+  <!-- Header con logo y nombre -->
   <header>
     <img src="https://raw.githubusercontent.com/NGStudiios/WP/main/logo.png" alt="NGS Logo">
     <h1>Negroni Studios</h1>
   </header>
 
-  <!-- Banner de advertencia grande -->
-  <div class="warning-banner">
-    <img src="https://raw.githubusercontent.com/NGStudiios/WP/main/logo.png" alt="NGS Logo">
-    PÁGINA EN DESARROLLO - NO PASAR
+  <!-- Contenido central -->
+  <div class="content">
+    <h2>Página en Desarrollo</h2>
+    <p>Bienvenido a Negroni Studios, empresa creadora de programas y aplicaciones web. Estamos trabajando para traerte la mejor experiencia posible. Pronto habrá más información disponible.</p>
   </div>
 
-  <!-- Contenido informativo -->
-  <div class="content">
-    <p>Empresa creadora de programas y aplicaciones web</p>
-    <p>Pronto estará disponible más información.</p>
-  </div>
+  <!-- Footer discreto -->
+  <footer>
+    &copy; 2025 Negroni Studios. Todos los derechos reservados.
+  </footer>
 </body>
 </html>
