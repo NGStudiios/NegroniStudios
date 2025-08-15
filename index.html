@@ -4,58 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Negroni Studios</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/NGStudiios/WP/main/logo.png">
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
-      background: linear-gradient(135deg, #1a1a1a, #333);
-      color: #fff;
-      text-align: center;
     }
 
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
-      color: #ffcc00;
-    }
-
-    p {
-      font-size: 1.5em;
-      margin: 0.5em 0;
-    }
-
-    .notice {
-      margin-top: 2em;
-      font-size: 1em;
-      color: #aaa;
-    }
-
-    .logo-placeholder {
-      width: 120px;
-      height: 120px;
-      background-color: #ffcc00;
-      border-radius: 50%;
-      margin-bottom: 1em;
+    header {
+      width: 100%;
+      background-color: #c00; /* Rojo */
+      padding: 20px 0;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      color: #fff;
+      font-size: 2em;
+      margin: 0;
+    }
+
+    .warning-banner {
+      width: 100%;
+      background-color: #ff0000; /* Rojo brillante */
+      color: #fff;
+      font-size: 2em;
       font-weight: bold;
-      font-size: 1.2em;
-      color: #1a1a1a;
+      text-align: center;
+      padding: 30px 10px;
+      margin: 30px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .warning-banner img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    .content {
+      text-align: center;
+      max-width: 800px;
+    }
+
+    .content p {
+      font-size: 1.5em;
+      color: #c00;
     }
   </style>
 </head>
 <body>
-  <div class="logo-placeholder">NS</div>
-  <h1>Negroni Studios</h1>
-  <p>Página en Desarrollo</p>
-  <p>Empresa creadora de programas y aplicaciones web</p>
-  <div class="notice">Pronto estará disponible más información.</div>
+  <!-- Encabezado con logo y nombre -->
+  <header>
+    <img src="https://raw.githubusercontent.com/NGStudiios/WP/main/logo.png" alt="NGS Logo">
+    <h1>Negroni Studios</h1>
+  </header>
+
+  <!-- Banner de advertencia grande -->
+  <div class="warning-banner">
+    <img src="https://raw.githubusercontent.com/NGStudiios/WP/main/logo.png" alt="NGS Logo">
+    PÁGINA EN DESARROLLO - NO PASAR
+  </div>
+
+  <!-- Contenido informativo -->
+  <div class="content">
+    <p>Empresa creadora de programas y aplicaciones web</p>
+    <p>Pronto estará disponible más información.</p>
+  </div>
 </body>
 </html>
