@@ -6,6 +6,8 @@
   <title>Negroni Studios</title>
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/NGStudiios/WP/main/logo.png">
+  <!-- Iconos de redes sociales (Font Awesome) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     /* Reset básico */
     * {
@@ -23,11 +25,10 @@
       min-height: 100vh;
     }
 
-    /* Header profesional */
+    /* Header profesional con rojo oscuro */
     header {
       width: 100%;
-      background: #fff;
-      border-bottom: 2px solid #c00; /* línea roja fina */
+      background: #8B0000; /* Rojo oscuro */
       display: flex;
       align-items: center;
       padding: 15px 40px;
@@ -41,7 +42,7 @@
 
     header h1 {
       font-size: 1.8em;
-      color: #c00;
+      color: #fff; /* Texto blanco para contraste */
       font-weight: 600;
     }
 
@@ -59,7 +60,7 @@
 
     .content h2 {
       font-size: 2.5em;
-      color: #c00;
+      color: #8B0000; /* Rojo oscuro para el título */
       margin-bottom: 20px;
     }
 
@@ -67,6 +68,26 @@
       font-size: 1.2em;
       color: #555;
       max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    /* Redes sociales */
+    .socials {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+
+    .socials a {
+      text-decoration: none;
+      color: #8B0000;
+      font-size: 2em;
+      transition: color 0.3s;
+    }
+
+    .socials a:hover {
+      color: #c00;
     }
 
     /* Animación fade-in */
@@ -95,6 +116,13 @@
   <div class="content">
     <h2>Página en Desarrollo</h2>
     <p>Bienvenido a Negroni Studios, empresa creadora de programas y aplicaciones web. Estamos trabajando para traerte la mejor experiencia posible. Pronto habrá más información disponible.</p>
+    
+    <!-- Redes sociales -->
+    <div class="socials">
+      <a href="https://www.tiktok.com/@ng_studiios_75" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/ng.studiios/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@NG-Studiios" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
   </div>
 
   <!-- Footer discreto -->
@@ -103,3 +131,4 @@
   </footer>
 </body>
 </html>
+
