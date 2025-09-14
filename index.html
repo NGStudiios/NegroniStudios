@@ -1,94 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Negroni Studios</title>
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/NGStudiios/WP/main/logo.png">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #fff;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
     }
     header {
-      width: 100%;
-      background: #8B0000;
-      display: flex;
-      align-items: center;
-      padding: 15px 40px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    header img { height: 60px; margin-right: 20px; }
-    header h1 { font-size: 1.8em; color: #fff; font-weight: 600; }
-    .content {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      background: #1e293b;
+      padding: 1rem;
       text-align: center;
-      padding: 40px 20px;
-      animation: fadeIn 1.5s ease-in-out;
     }
-    .content h2 { font-size: 2.5em; color: #8B0000; margin-bottom: 20px; }
-    .content p { font-size: 1.2em; color: #555; max-width: 600px; margin-bottom: 30px; }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      color: #38bdf8;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+      color: #e2e8f0;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: #38bdf8;
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
     .socials {
       display: flex;
-      gap: 30px;
-      justify-content: center;
-      margin-bottom: 50px;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
-    .socials a img {
-      width: 50px;
-      height: 50px;
-      border-radius: 10px;
-      transition: transform 0.3s ease, filter 0.3s ease;
+    .socials a {
+      background: #1e293b;
+      padding: 0.7rem 1.2rem;
+      border-radius: 8px;
+      transition: 0.3s;
     }
-    .socials a img:hover {
-      transform: scale(1.2);
-      filter: brightness(1.2);
+    .socials a:hover {
+      background: #38bdf8;
+      color: #0f172a;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    footer {
+      background: #1e293b;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
     }
-    footer { text-align: center; padding: 20px; color: #888; font-size: 0.9em; }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://raw.githubusercontent.com/NGStudiios/WP/main/logo.png" alt="NGS Logo">
     <h1>Negroni Studios</h1>
+    <p>Un microemprendimiento que crea aplicaciones, webs y juegos</p>
   </header>
 
-  <div class="content">
-    <h2>Página en Desarrollo</h2>
-    <p>Bienvenido a Negroni Studios, empresa creadora de programas y aplicaciones web. Estamos trabajando para traerte la mejor experiencia posible. Pronto habrá más información disponible.</p>
+  <main>
+    <!-- Proyecto Actual -->
+    <section>
+      <h2>Proyecto Actual: Wiaont</h2>
+      <p>
+        <strong>Wiaont</strong> es una plataforma dedicada al Centro de Estudiantes.<br />
+        Todos los derechos monetizables, judiciales y demás corresponden a Negroni Studios.<br />
+        Reconocimiento especial a <strong>Máximo Sánchez</strong>, creador de la idea original.
+      </p>
+      <p>
+        👉 Visita la página aquí:
+        <a href="https://wiaont.vercel.app/" target="_blank">Wiaont</a>
+      </p>
+    </section>
 
-    <div class="socials">
-      <!-- TikTok con PNG confiable -->
-      <a href="https://www.tiktok.com/@ng_studiios_75" target="_blank" title="TikTok">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/TikTok_logo_2020.svg" alt="TikTok Logo">
-      </a>
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/ng.studiios/" target="_blank" title="Instagram">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram Logo">
-      </a>
-      <!-- YouTube -->
-      <a href="https://www.youtube.com/@NG-Studiios" target="_blank" title="YouTube">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo">
-      </a>
-    </div>
-  </div>
+    <!-- Próximos Juegos -->
+    <section>
+      <h2>Próximos Juegos</h2>
+      <p>
+        Muy pronto anunciaremos nuestros próximos proyectos en videojuegos.<br />
+        ¡Estate atento a nuestras redes para enterarte primero!
+      </p>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section>
+      <h2>Redes Sociales</h2>
+      <p>Síguenos en nuestras redes y descubrí más sobre nuestros proyectos:</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/ng.studiios/" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@ng_studiios_75" target="_blank">TikTok</a>
+        <a href="https://www.youtube.com/@NG-Studiios" target="_blank">YouTube</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Negroni Studios. Todos los derechos reservados.
+    © 2025 Negroni Studios - Todos los derechos reservados
   </footer>
 </body>
 </html>
