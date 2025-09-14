@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiaont | Negroni Studios</title>
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #3B82F6; /* Azul Vibrante */
+            --background-dark: #0A0A0A; /* Negro Profundo */
+            --background-secondary-dark: #1A1A1A; /* Gris Oscuro */
+            --text-dark: #FFFFFF; /* Blanco Puro */
+            --text-light: #E0E0E0; /* Gris Claro */
+            --highlight-gold: #D4AF37; /* Dorado Exclusivo */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-dark);
+            color: var(--text-dark);
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(212,175,55,0.1));
+            opacity: 0.1;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 900px;
+            background-color: var(--background-secondary-dark);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeInSlideUp 1s forwards 0.5s;
+        }
+
+        .logo-small {
+            height: 60px;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        p {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background: linear-gradient(90deg, var(--primary-color), #2563EB);
+            color: var(--text-dark);
+            padding: 1.2rem 3.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            display: inline-block;
+            box-shadow: 0 8px 30px rgba(59,130,246,0.4);
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(90deg, #2563EB, var(--primary-color));
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 15px 40px rgba(59,130,246,0.5);
+        }
+
+        .credit {
+            margin-top: 2rem;
+            font-style: italic;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            opacity: 0;
+            animation: fadeIn 1s forwards 1.5s;
+        }
+
+        @keyframes fadeInSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Negroni Studios Logo" class="logo-small">
+        <h1>Wiaont</h1>
+        <p>Wiaont es una web de centro de estudiantes donde todos se pueden unir, crear su centro y pasarla bien.</p>
+        <a href="https://wiaont.vercel.app/" class="cta-button" target="_blank">Visitar Wiaont</a>
+        
+        <p class="credit">Todos los derechos reservados, Negroni Studios. El nombre e idea de la aplicación fueron sugeridos por Máximo Sánchez, pero el desarrollo completo y la idea de crear una red social para centros de estudiantes fue llevada a cabo por Negroni Studios.</p>
+    </div>
+</body>
+</html>
