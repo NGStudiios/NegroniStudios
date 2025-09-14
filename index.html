@@ -130,7 +130,7 @@
         .nav-links a:hover::after {
             width: 100%;
         }
-
+        
         /* Sección Hero con Efecto Parallax */
         .hero {
             position: relative;
@@ -172,15 +172,7 @@
             text-shadow: 0 10px 30px rgba(0,0,0,0.6);
             line-height: 1.1;
             letter-spacing: -1px;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-            max-width: 800px;
-            color: var(--text-light);
             margin-bottom: 3rem;
-            animation-delay: 1s;
         }
 
         .cta-button {
@@ -202,11 +194,35 @@
             transform: translateY(-5px) scale(1.03);
             box-shadow: 0 15px 40px rgba(59,130,246,0.5);
         }
+        
+        /* Nueva Sección Quiénes Somos */
+        .about-section {
+            padding: 6rem 2rem;
+            background-color: var(--background-secondary-dark);
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            margin-bottom: 2rem;
+            color: var(--text-dark);
+            letter-spacing: -0.5px;
+            font-weight: 900;
+        }
+        
+        .about-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
 
         /* Sección de Proyectos */
         .projects-section {
             padding: 6rem 2rem;
-            background-color: var(--background-secondary-dark);
+            background-color: var(--background-dark);
         }
 
         .projects-section h2 {
@@ -309,7 +325,6 @@
         }
 
         .coming-soon .card-content {
-            /* Mantiene los estilos del .card-content normal, con pequeños ajustes */
             justify-content: flex-end; /* Vuelve a alinear el texto en la parte inferior */
             text-align: left;
             background: linear-gradient(to top, rgba(10,10,10,0.9), transparent 70%); /* Reutiliza el gradiente para el texto */
@@ -558,9 +573,13 @@
         <div class="hero-background"></div>
         <div class="hero-content">
             <h2>Donde la Creatividad se Encuentra con la Innovación.</h2>
-            <p>Somos Negroni Studios, tu socio en la creación de experiencias digitales únicas: desde aplicaciones, hasta mundos de videojuegos inmersivos.</p>
             <a href="#proyectos" class="cta-button">Descubre Nuestro Portafolio</a>
         </div>
+    </section>
+
+    <section id="quienes-somos" class="about-section">
+        <h2>¿Quiénes Somos?</h2>
+        <p>Somos Negroni Studios, tu socio en la creación de experiencias digitales únicas: desde aplicaciones, webs, hasta mundos de videojuegos inmersivos.</p>
     </section>
 
     <section id="proyectos" class="projects-section">
